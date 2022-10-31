@@ -9,18 +9,24 @@ Use test-driven development to write your business logic, and include the tests 
 If you complete the business logic, you may work on adding a user interface. (See the upcoming lessons for more on adding a UI.) 
 
 ## TESTs
-Describe: function DestinationBook()
+Describe: DestinationBook()
 
 Test: this will create the DestinationBook object
 Code: DestinationBook();
 Output: {} (blank object)
 
+Describe: DestinationBook.prototype.assignId()
+Test: this will increment the index key by 1
+code: DestinationBook.prototype.assignId(0)
+output: location.id = 1
+
+
 //business
 //create DestinationBook()
-//create DestinationBook.prototype.addLocationData()
-//create DestinationBook.prototype.assignId()
-//create DestinationBook.prototype.findLocation()
-//create DestinationBook.prototype.deleteLocation()
+//create DestinationBook.prototype.addLocationData() //add complete location object to DestinationBook
+//create DestinationBook.prototype.assignId()     //indexkey assignment
+//create DestinationBook.prototype.findLocation() //equivalent of searching for a contact
+//create DestinationBook.prototype.deleteLocation() //removing contact
 
 //ui
-//function AddLocationData(location, landmarks, timeOfYear, notes)
+//function Location(location, landmarks, timeOfYear, notes)
